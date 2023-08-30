@@ -1,0 +1,507 @@
+
+<html>
+    <head>
+        <title>CODER'ZONE</title>
+        <style>
+            body{
+                background-color:blanchedalmond;
+                              
+            }
+            #searchbar{
+                
+                    padding: 10px;
+                    font-size: 17px;
+                    border: 1px solid grey;
+                    float: center;
+                    width: 50%;
+                    background: #f1f1f1;
+
+            }
+            #slide{
+                font-size: 150%;
+                font-family:monospace;
+            }
+
+            #welcome{
+                font-size: 350%;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                color: blue;
+                text-align: center;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            }
+
+            #coderzone{
+                font-size: 400%;
+                text-align: center;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-shadow: 4px 4px;
+            }
+
+            #learn{
+                font-size: 300%;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                color:darkred;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            }
+
+            #newuser{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+                font-style: italic;
+            }
+
+            #signup{
+                align-content: center;
+            }
+
+            #search{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            #courses{
+                text-align: center;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 150%;
+                text-shadow: -2px 0 greenyellow, 0 2px purple, 2px 0 greenyellow, 0 -2px purple;
+            }
+
+            #htmlex{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-size: 180%;
+                text-shadow: -2px 0 yellow, 0 2px orangered, 2px 0 yellow, 0 -2px orangered;
+                text-align: center;
+            }
+
+            #cssex{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-size: 180%;
+                text-shadow: -2px 0 yellow, 0 2px orangered, 2px 0 yellow, 0 -2px orangered;
+                text-align: center;
+            }
+
+            #jsex{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-size: 180%;
+                text-shadow: -2px 0 yellow, 0 2px orangered, 2px 0 yellow, 0 -2px orangered;
+                text-align: center;
+            }
+
+            #pyex{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-size: 180%;
+                text-shadow: -2px 0 yellow, 0 2px orangered, 2px 0 yellow, 0 -2px orangered;
+                text-align: center;
+            }
+
+            #noknow{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 150%;
+                text-align: center;
+            }
+
+            #exercise{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 150%;
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+
+            #quiz{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 150%;
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+
+            a:link, a:visited {
+                background-color:crimson;
+                color: white;
+                padding: 14px 25px;
+                text-align: center;
+                text-decoration: none;
+                display: inline-block;
+                font-style: italic;
+                cursor:pointer;
+            }
+
+            a:hover, a:active {
+                background-color: green;
+                color: white;
+                cursor:pointer;
+            }
+
+            .search{
+                overflow: hidden;
+                background-color:#e9e9e9;
+            }
+
+            .search input[type=text]{
+                float: right;
+                padding: 10px;
+                border: none;
+                margin-top: 8px;
+                margin-right: 16px;
+                font-size: 17px;
+            }
+
+            #searchtuto{
+                font-size: 150%;
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+
+            #click{
+                align-self: center;
+            }
+
+            button{
+                background:tomato;
+                padding: 14px 50px;
+                outline: none;
+                color: #fff;
+                letter-spacing: 1px;
+                cursor:pointer; 
+                width: 300px;
+                height: 50px;
+                padding: 15px;
+
+                box-shadow: 10px 10px; 
+            }
+
+            li{
+                font-family: 'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            .new{
+                font-size: 200%;
+            }
+
+            #project{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-align: center;
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+
+            #calc{
+                text-align: center;
+                color: crimson;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            }
+
+            #personal{
+                font-style: italic;
+                text-align: center;
+                color: crimson;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            #mplayer{
+                font-style: italic;
+                text-align: center;
+                color: crimson;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            #pecwebsite{
+                font-style: italic;
+                text-align: center;
+                color: crimson;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+                font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif;
+            }
+
+            .end{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 200%;
+            }
+
+            #phone{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+            }
+
+            #contact{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+            
+            #con{
+                text-shadow: -2px 0 greenyellow, 0 2px orangered, 2px 0 greenyellow, 0 -2px orangered;
+            }
+            
+
+            #calc{
+                font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-style: italic;
+                font-size: 150%;
+            }
+
+            #quizname{
+                width: 200px;
+                height: 40px;
+                border: 1px solid #999;
+                font-size: 22px;
+                color:crimson;
+                background-color: #eee;
+                border-radius: 5px;
+                box-shadow: 4px 4px #ccc;
+            }
+
+            #exname{
+                width: 200px;
+                height: 40px;
+                border: 1px solid #999;
+                font-size: 22px;
+                color:crimson;
+                background-color: #eee;
+                border-radius: 5px;
+                box-shadow: 4px 4px #ccc;
+                cursor: pointer;
+            }
+
+            #logo{
+                border-radius: 50%;
+                display: block;
+                width: 300px;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            .dropdown {
+                position: relative;
+                display: inline-block;
+            }
+
+            .dropdown-content {
+                display: none;
+                position: absolute;
+                background-color: #f9f9f9;
+                min-width: 160px;
+                box-shadow: 0px 8px 16px 0px rgba(0,0,0,0.2);
+                padding: 12px 16px;
+                z-index: 1;
+            }
+
+            .dropdown:hover .dropdown-content {
+                display: block;
+            }
+
+            span{
+                color:red;
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                font-size: 150%;
+                text-shadow: -2px 0 black, 0 2px black, 2px 0 black, 0 -2px black;
+            }
+
+            #ele{
+                font-family:'Trebuchet MS', 'Lucida Sans Unicode', 'Lucida Grande', 'Lucida Sans', Arial, sans-serif;
+            }
+
+            #ex{
+                display: block;
+                margin-left: auto;
+                margin-right: auto;
+            }
+
+            span.block{
+                display: inline; /* the default for span */
+                width: 100px;
+                height: 100px;
+                padding: 5px;
+                border: 1px solid blue;  
+                background-color:lightskyblue;
+            }
+
+            * {
+                 box-sizing: border-box;
+              }
+
+            .prouser{
+                background-color:brown;
+            }
+
+            #header{
+                font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+                text-shadow: -2px 0 green, 0 2px white, 2px 0 green, 0 -2px white;
+                text-align: center;
+            }
+
+body {
+  font-family:'Lucida Sans', 'Lucida Sans Regular', 'Lucida Grande', 'Lucida Sans Unicode', Geneva, Verdana, sans-serif
+}
+
+/* Float four columns side by side */
+.column {
+  float: left;
+  width: 25%;
+  padding: 0 10px;
+}
+
+/* Remove extra left and right margins, due to padding */
+.row {margin: 0 -5px;}
+
+/* Clear floats after the columns */
+
+
+/* Responsive columns */
+@media screen and (max-width: 600px) {
+  .column {
+    width: 100%;
+    display: block;
+    margin-bottom: 20px;
+  }
+}
+
+/* Style the counter cards */
+.card {
+  box-shadow: 0 4px 8px 0 rgba(0, 0, 0, 0.2);
+  padding: 16px;
+  text-align: center;
+  background-color: #f1f1f1;
+}
+
+
+ 
+        </style>
+    </head>
+    <body>
+        <img src="coderzone_logo.png" id="logo">
+        <h1 id="coderzone">CODERZ'ONE</h1>
+        <h1 id="welcome">      Welcome to <span class="block">CoderZ</span>'one......</h1>
+        <h2 id="learn">Learn to code with the Best learning Site !!!!!</h2>
+        <div class="new">
+        <a href="">Upgrade PRO</a>
+        <a href="http://localhost/Form%20Using%20Database/login.php" target="_blank">Login</a>
+        <a href="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/Student-Registration-Form-master/Student-Registration-Form-master/index.html" target="_blank" id="signup">Sign up</a>
+        <a href="http://localhost/thiru_php/php-form-validation-master/" target="_blank">Get Certified</a>
+        <a href="#con">Contact Us</a>
+        <a href="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/interact1.html" target="_blank">Helper</a>
+        <p id="slide"><marquee>Warm welcome all to our Web page "CODER'ZONE" . We offer a very good Training on Programming languages and also on Electronics related training . We offer enhanced training on Web Programming (HTML,CSS,JavaScript,PHP,etc....) . Our interactive tutorials make you enjoy learning . If Any Queries,Don't hestitate to Contact Us..... </marquee></p>
+        <h2 id="searchtuto">SEARCH FOR TUTORIALS.....</h2>
+        <div class="search">
+            
+            <input type="search" id="searchbar" name="searchbar" placeholder="Search for (Eg.HTML)">
+            <button type="submit"><i class="search"></i>SEARCH:</button>
+        </div>
+        
+        <h2 id="courses">COURSES OFFERED : </h2>
+        <div class="dropdown">
+            <span><b>IT Packages : </b></span>
+            <div class="dropdown-content">
+                <p id="ele">C</p>
+                <p id="ele">C++</p>
+                <p id="ele">C#</p>
+                <p id="ele">Python</p>
+                <p id="ele">Java</p>
+                <p id="ele">SQL</p>
+            </div>
+        </div>
+        <br>
+        <br>
+        <div class="dropdown">
+            <span><b>Electronics packages : </b></span>
+            <div class="dropdown-content">
+                <p id="ele">Arduino UNO</p>
+                <p id="ele">Assembly Languages</p>
+                <p id="ele">Verilog</p>
+                <p id="ele">VHDL</p>
+            </div>
+        </div>
+        
+
+        <h3 id="exercise">EXERCISES : </h3>
+        <select name="exname" id="exname" onchange="window.location.href=this.value;">
+            <option value="none">SELECT</option>
+            <option value="https://www.w3schools.com/html/html_exercises.asp">HTML Exercises</option>
+            <option value="https://www.w3schools.com/css/css_exercises.asp">CSS Exercises</option>
+            <option value="https://www.w3schools.com/js/js_exercises.asp">Javascript Exercises</option>
+            <option value="https://www.w3schools.com/c/c_exercises.php">C Exercises</option>
+            <option value="https://www.w3schools.com/cpp/cpp_exercises.asp">C++ Exercises</option>
+            <option value="https://www.w3schools.com/python/python_exercises.asp">Python Exercises</option>
+            <option value="https://www.w3schools.com/java/java_exercises.asp">Java Exercises</option>
+            <option value="https://www.w3schools.com/sql/sql_exercises.asp">SQL Exercises</option>
+            <option value="https://www.w3schools.com/jquery/jquery_exercises.asp">JQuery Exercises</option>
+            <option value="https://www.w3schools.com/php/php_exercises.asp">PHP Exercises</option>
+        </select>
+
+        <h3 id="quiz">QUIZZES : </h3>
+        <select name="quizname" id="quizname" onchange="window.location.href=this.value;">
+            <option value="none">SELECT</option>
+            <option value="https://www.w3schools.com/html/html_quiz.asp">HTML Quiz</option>
+            <option value="https://www.w3schools.com/css/css_quiz.asp">CSS Quiz</option>
+            <option value="https://www.w3schools.com/js/js_quiz.asp">Javascript Quiz</option>
+            <option value="https://www.w3schools.com/c/c_quiz.php">C Quiz</option>
+            <option value="https://www.w3schools.com/cpp/cpp_quiz.asp">C++ Quiz</option>
+            <option value="https://www.w3schools.com/python/python_quiz.asp">Python Quiz</option>
+            <option value="https://www.w3schools.com/java/java_quiz.asp">Java Quiz</option>
+            <option value="https://www.w3schools.com/sql/sql_quiz.asp">SQL Quiz</option>
+            <option value="https://www.w3schools.com/jquery/jquery_quiz.asp">JQuery Quiz</option>
+            <option value="https://www.w3schools.com/php/php_quiz.asp">PHP Quiz</option>
+        </select>
+
+        <h1 id="htmlex"><u>HTML sample example</u></h1>
+        <br>
+        <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/htmlexample.png" id="ex">
+        <br>
+        <h1 id="cssex"><u>CSS example</u></h1>
+        <br>
+        <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/cssexample.png" id="ex">
+        <br>
+        <h1 id="jsex"><u>JavaScript example</u></h1>
+        <br>
+        <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/jsexample.png" id="ex">
+        <br>
+        <h1 id="pyex"><u>Python example</u></h1>
+        <br>
+        <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/pythonexample.png" id="ex">
+        <br>
+
+        <div class="projects">
+            <h1 id="project">Our Projects.....</h1>
+            <h2 id="calc">BASIC CALC</h2>
+            <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/calc.png" id="calc"><br><br>
+            <a href="calculator.html" target="_blank">Click HERE....</a>
+            <h2 id="Personal">PERSONAL WEBSITE</h2>
+            <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/personal_webpage.png" id="pers"><br><br>
+            <a href="https://resum1-5e05d.web.app/" target="_blank">Click HERE....</a>
+            <h2 id="mplayer">MUSIC PLAYER</h2>
+            <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/mp3.png" id="mp3"><br><br>
+            <a href="https://webhost-89e72.firebaseapp.com/" target="_blank">Click HERE....</a>
+            <h2 id="pecwebsite">PTU WEBSITE USING HTML</h2>
+            <img src="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/pec_website.png" id="pecwebimg">
+            <br><br>
+            <a href="file:///C:/Users/keerthi/Desktop/APPS/My%20HTML/pec%20website%20by%20me.html">Click HERE....</a>
+        </div>
+
+        <br>
+
+        <div class="prouser">
+            <br>
+            <h1 id="header">Become a PRO user</h1>
+            <h3 id="unlock">Unlock powerful features</h3>
+            <ul type="square">
+                <li>Enjoy without ADS</li>
+                <li>Access to our video tutorials</li>
+                <li>Create a webiste in our environment</li>
+            </ul>
+            <br>
+        </div>
+        <h3 id="noknow">Doesn't know where to Start.......</h3>
+        <a href="wheretostart.html" target="_blank" id="click">Click Here!</a>
+        <h1 id="contact">Contact Us : </h1>
+        <p id="phone">Phone : +91 9629701158 <br> E-Mail us : </p>
+        <a href="mailto:thirusankar2203@gmail.com subject=subject text" target="_blank">thirusankar2203@gmail.com</a>
+        </div>
+
+        <div class="end">
+            <h1 id="con">Contact Details :</h1>
+            <br>
+            <p>S.Thirumurugan ,<br>7th Cross extn ,<br>Rainbow Nagar ,<br>Puducherry - 605013 .<br></p>
+            <p>Personal Contact : 9629701158</p>
+        </div>
+    </body>
+</html>
